@@ -29,6 +29,12 @@ public class paramServLet extends HttpServlet {
 		String number = request.getParameter("number");
 		String password = request.getParameter("password");
 		
+		request.setAttribute("id",id);
+		request.setAttribute("age",age);
+		request.setAttribute("tel",tel);
+		request.setAttribute("number",number);
+		request.setAttribute("password",password);
+		
 		
 		PrintWriter out = response.getWriter();
 		

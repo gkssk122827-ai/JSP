@@ -1842,3 +1842,138 @@ org.eclipse.core.runtime.AssertionFailedException: assertion failed:
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-11-11 16:16:39.951
 !MESSAGE [Info]	ESLint server running in node v22.13.1
+!SESSION 2025-11-12 08:48:13.638 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-12 08:48:15.950
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-11-12 08:48:16.145
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-12 08:48:20.761
+!MESSAGE Logback config file: D:\works\JSP\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-12 08:48:26.883
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\M'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2025-11-12 09:26:36.616
+!MESSAGE Tomcat version 9.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, 7, and 8 Web modules
+!SESSION 2025-11-12 09:28:01.277 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-12 09:28:03.397
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-11-12 09:28:03.540
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-12 09:28:08.612
+!MESSAGE Logback config file: D:\works\JSP\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-12 09:28:13.043
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\M'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2025-11-12 09:28:45.595
+!MESSAGE Tomcat version 9.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, 7, and 8 Web modules
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-11-12 09:30:22.588
+!MESSAGE [Info]	ESLint server running in node v22.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-11-12 09:30:22.626
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.7.3 from path "D:\Dev\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.6.202502071606\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-11-12 09:30:22.636
+!MESSAGE [Info]	Typescript Server version info: {version=5.7.3, source=user-setting}
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2025-11-12 09:30:50.301
+!MESSAGE Tomcat version 9.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, 7, and 8 Web modules
+
+!ENTRY org.eclipse.wst.sse.core 4 4 2025-11-12 09:42:37.244
+!MESSAGE can not get a buffer without a document reference
+!STACK 0
+java.lang.IllegalArgumentException: can not get a buffer without a document reference
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getBuffer(FileBufferModelManager.java:674)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.getModelPath(JSPTranslator.java:3310)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.writeExternal(JSPTranslator.java:3418)
+	at java.base/java.io.ObjectOutputStream.writeExternalData(ObjectOutputStream.java:1478)
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1449)
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1194)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:358)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslator(JSPTranslatorPersister.java:265)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslation(JSPTranslatorPersister.java:149)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager.performAction(JSPIndexManager.java:139)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob$1.run(AbstractIndexManager.java:1569)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1567)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2025-11-12 09:44:48.716
+!MESSAGE Tomcat version 9.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, 7, and 8 Web modules
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2025-11-12 09:46:20.234
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while moving resources.
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1633)
+	at org.eclipse.ltk.core.refactoring.resource.RenameResourceChange.perform(RenameResourceChange.java:118)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+Contains: Resource already exists on disk: 'D:\works\JSP\web-study-04'.
+!SUBENTRY 1 org.eclipse.core.resources 1 4 2025-11-12 09:46:20.235
+!MESSAGE Problems encountered while moving resources.
+!SUBENTRY 2 org.eclipse.core.resources 1 4 2025-11-12 09:46:20.235
+!MESSAGE Resource already exists on disk: 'D:\works\JSP\web-study-04'.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2025-11-12 10:05:33.017
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+!SESSION 2025-11-12 18:12:27.869 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-12 18:12:30.344
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-11-12 18:12:30.552
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-12 18:12:35.571
+!MESSAGE Logback config file: D:\works\JSP\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-12 18:12:41.438
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\M'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
