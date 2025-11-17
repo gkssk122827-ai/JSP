@@ -1,11 +1,13 @@
 create table member(
-name varchar2(10),
-userid varchar2(10) primary key,
+name varchar2(30),
+userid varchar2(30) primary key,
 pwd varchar2(10),
 email varchar2(30),
 phone char(13),
 admin number(1) default 0
 );
+ALTER TABLE member MODIFY name VARCHAR2(50);
+
 
 select * from member;
 
@@ -32,6 +34,15 @@ where userid = 'light';
 commit;
 
 delete from member
-where userid = 'waterdog';
+where userid = 'test1';
 
 
+
+update member set 
+pwd='1234', email='test@test.com', phone='010-1111-2222', admin=1
+where userid = 'somi';
+
+commit;
+select * from member;
+
+select * from member where userid ='somi';

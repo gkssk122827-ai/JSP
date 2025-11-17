@@ -14,7 +14,7 @@
 		<table>
 			<tr>
 				<td>아이디</td>
-				<td><input type="text" name="userid" value="${userId}"></td>
+				<td><input type="text" name="userid" value="${userid}"></td>
 			</tr>
 			<tr>
 				<td>암 호</td>
@@ -26,13 +26,15 @@
 					<input type="submit" value="로그인"
 							onclick="return loginCheck()"> &nbsp;&nbsp;
 					<input type="reset" value="취소"> &nbsp;&nbsp;
-					<input type="button" value="회원가입">
+					<input type="button" value="회원가입" onclick="location.href='join.do'">
 				</td>
 			</tr>
 			
 			<tr>
-				<td colspan="2">${message}</td>
+				<td colspan="2" style="color:red">${message}</td>
+				
 			</tr>
+			
 		</table>
 		
 	</form>
