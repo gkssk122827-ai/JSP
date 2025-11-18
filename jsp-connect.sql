@@ -46,3 +46,5 @@ commit;
 select * from member;
 
 select * from member where userid ='somi';
+
+update member set pwd='1111', email='1111@naver.com', phone='01092847821', admin=0 where userid='sang12;

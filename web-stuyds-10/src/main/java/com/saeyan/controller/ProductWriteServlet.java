@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+import com.saeyan.dao.ProductDAO;
+import com.saeyan.dto.ProductVO;
 
 
 @WebServlet("/productWrite.do")
@@ -47,14 +49,33 @@ public class ProductWriteServlet extends HttpServlet {
 		int sizeLimit = 20*1024*1024;
 		
 		MultipartRequest multi = 
-				new MultipartRequest(request, encType, sizeLimit, new DefaultFileRenamePolicy());
+				new MultipartRequest(request, path, sizeLimit, encType, new DefaultFileRenamePolicy());
 		
 		String name = multi.getParameter("name");
 		int price = Integer.parseInt(multi.getParameter("price"));
 		
 		//파일 업로드 --------- getFilesystemName
 		String pictureUrl = multi.getFilesystemName("pictureUrl");
+		
 		String description = multi.getParameter("description");
+//		String originName = multi.getOriginalFileName("description");
+//		System.out.println("originName : " +originName);
+		
+		ProductVO vo =new ProductVO();
+		vo.setName(name);
+		vo.setPrice(price);
+		vo.setDescription(description);
+		vo.setDescription(description);
+		vo.setPictureUrl(pictureUrl);
+		
+		ProductDAO pdao = ProductDAO.getInstance();
+		
+		//ProductDAO클래스 insertProduct호풍
+		pdao.insertProduct(vo);
+		
+		//post-> redirect->get(PRG패턴)
+		response.sendRedirect("productList.do");
+		
 	}
 
 }
